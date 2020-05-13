@@ -44,6 +44,7 @@ export const Card = styled.div`
     font-size: 36px;
     font-weight: normal;
     line-height: 54px;
+    text-align: right;
   }
 `;
 
@@ -61,6 +62,14 @@ export const TableContainer = styled.section`
       text-align: left;
       font-size: 16px;
       line-height: 24px;
+
+      &.right {
+        text-align: right;
+      }
+
+      &.actions {
+        width: 50px;
+      }
     }
 
     td {
@@ -77,10 +86,29 @@ export const TableContainer = styled.section`
 
       &.income {
         color: #12a454;
+        text-align: right;
       }
 
       &.outcome {
         color: #e83f5b;
+        text-align: right;
+      }
+
+      &.actions {
+        width: 50px;
+        text-align: right;
+        align-items: right;
+      }
+
+      button {
+        background: none;
+        border: 0;
+
+        transition: color 0.2s;
+
+        &:hover {
+          color: #6e6e4e;
+        }
       }
     }
 
